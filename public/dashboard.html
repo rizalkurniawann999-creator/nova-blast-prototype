@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101525">
+  <title>NOVA • Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/dashboard.html"><span class="brand-mark small">N</span><span>NOVA <small>CONTROL PANEL</small></span></a>
+      <div class="side-label">MENU UTAMA</div>
+      <nav id="nav-menu"></nav>
+      <div class="sidebar-bottom"><div class="status-dot"></div><span>Local demo mode</span><span class="tiny">v0.1</span></div>
+    </aside>
+    <main class="main-panel">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-btn" aria-label="Buka menu">☰</button>
+        <div><p class="eyebrow" id="page-eyebrow">OVERVIEW</p><h1 id="page-title">Dashboard</h1></div>
+        <div class="top-user"><div class="avatar" id="avatar">U</div><div><strong id="top-name">User</strong><small id="top-role">USER</small></div><button id="logout-btn" class="btn ghost">Keluar</button></div>
+      </header>
+      <div class="demo-banner"><span>ⓘ</span><div><strong>Mode simulasi aktif</strong><p>Statistik, server, dan job adalah data contoh. Tidak ada pesan yang dikirim.</p></div></div>
+      <section id="content" class="content-area"><div class="loading">Memuat dashboard…</div></section>
+      <footer>© 2026 NOVA Control <span>Prototype • Local only</span></footer>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101525">
+  <title>NOVA • Login</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="login-body">
+  <main class="login-shell">
+    <section class="brand-panel">
+      <div class="brand-mark">N</div>
+      <p class="eyebrow">LOCAL DEMO ENVIRONMENT</p>
+      <h1>NOVA <span>CONTROL</span></h1>
+      <p class="muted">Satu panel. Tiga role. Enam server simulasi.</p>
+      <div class="feature-pills"><span>Multi-role</span><span>VPS Simulator</span><span>Audit Logs</span></div>
+      <div class="decor-orb orb-one"></div><div class="decor-orb orb-two"></div>
+    </section>
+    <section class="login-panel">
+      <p class="eyebrow">SELAMAT DATANG</p>
+      <h2>Login ke panel</h2>
+      <p class="muted">Gunakan akun demo untuk mencoba tiap role.</p>
+      <form id="login-form">
+        <label>Username<input name="username" autocomplete="username" required placeholder="contoh: admin_demo"></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Masukkan password"></label>
+        <button class="btn primary full" type="submit">Masuk ke dashboard <span>↗</span></button>
+        <p id="login-error" class="error" role="alert"></p>
+      </form>
+      <div class="demo-accounts">
+        <p class="eyebrow">AKUN DEMO</p>
+        <button type="button" class="demo-account" data-user="user_demo" data-pass="DemoUser123!"><span>User</span><code>user_demo</code><b>Isi</b></button>
+        <button type="button" class="demo-account" data-user="admin_demo" data-pass="DemoAdmin123!"><span>Admin</span><code>admin_demo</code><b>Isi</b></button>
+        <button type="button" class="demo-account" data-user="boss_demo" data-pass="DemoBoss123!"><span>Bos</span><code>boss_demo</code><b>Isi</b></button>
+      </div>
+      <p class="tiny muted">Prototype lokal. Tidak ada pengiriman pesan atau transaksi uang sungguhan.</p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
